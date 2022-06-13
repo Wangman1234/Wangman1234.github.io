@@ -1,6 +1,11 @@
+@font-face {
+    font-family: SingMing_Angled_Sans;
+    src: url("/fonts/SingMing_Angled_Sans.otf");
+}
+
 html {
     writing-mode: vertical-rl;
-    font-family: 'JetBrains Mono', 'ZCOOL XiaoWei', sans-serif;
+    font-family: 'JetBrain Mono', 'Noto Sans SC', SingMing_Angled_Sans, sans-serif;
 }
 
 .tcy {
