@@ -11,3 +11,27 @@ html {
 .tcy {
     text-combine-upright: all
 }
+
+.titlebar {
+    background-color: thistle;
+    overflow: hidden;
+}
+
+.titlebar a {
+    float: top;
+    color: rgba(0, 0, 0, 0.543);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.titlebar a:hover {
+    background-color: fuchsia;
+    color: black;
+}
+
+.titlebar a.active {
+    background-color: darkviolet;
+    color: white;
+}
