@@ -13,17 +13,21 @@ html {
 }
 
 .titlebar {
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    right: 0;
     background-color: thistle;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .titlebar a {
     float: top;
     color: rgba(0, 0, 0, 0.543);
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 30px;
 }
 
 .titlebar a:hover {
@@ -34,4 +38,14 @@ html {
 .titlebar a.active {
     background-color: darkviolet;
     color: white;
+}
+
+@media screen and (max-height: 450px) {
+    .titlebar {
+        padding-top: 15px;
+    }
+
+    .titlebar a {
+        font-size: 18px;
+    }
 }
