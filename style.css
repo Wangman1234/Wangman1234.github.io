@@ -2,10 +2,14 @@
     font-family: SingMing_Angled_Sans;
     src: url("/fonts/SingMing_Angled_Sans.otf");
 }
+@font-face {
+    font-family: CC Sans;
+    src: url("/fonts/CCSansRegular.otf");
+}
 
 html {
     writing-mode: vertical-rl;
-    font-family: 'JetBrain Mono', 'Noto Sans SC', SingMing_Angled_Sans, sans-serif;
+    font-family: CC Sans, 'Noto Sans SC', SingMing_Angled_Sans, 'JetBrain Mono', 'Noto Sans SC', sans-serif;
 }
 
 .tcy {
@@ -14,6 +18,7 @@ html {
 
 .titlebar {
     height: 100%;
+    width: 48px;
     z-index: 1;
     top: 0;
     right: 0;
@@ -23,22 +28,18 @@ html {
 }
 
 .titlebar a {
-    float: top;
     color: rgba(0, 0, 0, 0.543);
+    margin: auto;
+    width: 100%;
     text-align: center;
     padding: 16px 16px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .titlebar a:hover {
     background-color: fuchsia;
     color: black;
-}
-
-.titlebar a.active {
-    background-color: darkviolet;
-    color: white;
 }
 
 @media screen and (max-height: 450px) {
